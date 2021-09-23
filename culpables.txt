@@ -1,0 +1,69 @@
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  1) <!DOCTYPE html>
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  2) <html lang="es">
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  3) <head>
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  4)     <meta charset="UTF-8">
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  5)     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  6)     <meta name="viewport" 
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  7)         content="
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  8)             width=device-width, 
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300  9)             initial-scale=1,
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300 10)             maximum-scale=3">
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300 11)     <title>Git Desarrollo Colaborativo</title>
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300 12) </head>
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300 13) <body>
+4c538c5c (Cristian Racedo   2021-09-16 11:46:14 -0300 14)     <header>
+4c538c5c (Cristian Racedo   2021-09-16 11:46:14 -0300 15)         <h1>GIT</h1>
+4c538c5c (Cristian Racedo   2021-09-16 11:46:14 -0300 16)         <p>Desarrollo Colaborativo</p>
+4c538c5c (Cristian Racedo   2021-09-16 11:46:14 -0300 17)     </header>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 18)     <section>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 19)         <h2>Areas de GIT</h2>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 20)         <article>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 21)             <h3>Working Directory</h3>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 22)             <p>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 23)                 El area de trabajo corresponde a la carpeta donde inicilializamos el repositorio de git, rara vez vamos a estar utilizando la linea de comandos y es basicamente donde vamos a crear, editar y eliminar los diferentes archivos de nuestro proyecto.
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 24)             </p>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 25)             <ul class="commands">
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 26)                 <li><strong>dir || ls</strong> muestra el contenido de la carpeta actual</li>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 27)                 <li><strong>mkdir &lt;name></strong> crea una carpeta con el nombre especificado</li>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 28)                 <li><strong>cd &lt;path></strong> cambia la carpeta actual por la seleccionada</li> 
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 29)                 <li><strong>git init</strong> inicializa un repositorio de git en la carpeta actual</li>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 30)                 <li><strong>rm -rf .git</strong> elimina el repositorio de manera forzada</li>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 31)             </ul>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 32)         </article>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 33)         <article>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 34)             <h3>Staging Area (INDEX)</h3>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 35)             <p>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 36)                 El area de control de cambios es aquella donde agregamos los archivos a los que vamos a estar haciendole seguimiento, cada vez que agregamos un elemento al INDEX, se realiza un acaptura de pantalla del cofigo (SNAPSHOT) que luego debera ser confirmada para determinar su permanencia en el historial de cambios.
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 37)             </p>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 38)         </article>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 39)         <ul class="commands">
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 40)             <li><strong>Git status</strong> muestra el estado de los archivos del Working Directory con respecto al INDEX, dentro de los estados mas comunes estan: 
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 41)                 <ul>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 42)                     <li><strong>untracked: </strong>No se esta realizando el seguimiento del archivo, irrecuperable en caso de perdida.</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 43)                     <li><strong>stage: </strong>Se realizo la captura del codigo, pero todavia no se confrimaron los cambios.</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 44)                     <li><strong>commited: </strong>Los cambios realizados en el archivo se encuentran almazenados en el historial</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 45)                     <li><strong>modified: </strong>el archivo difiere con respecto a lo registrado en el INSEX o la ultima confirmacion.</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 46)                 </ul>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 47)             </li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 48)             <li><strong>git add &lt;file></strong> agrega el INSEX el conjunto de archivos seleccionados. 
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 49)             </li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 50)             <li><strong>git diff</strong> compara los archivos del Working Directory con lo que se registra en el INDEX.</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 51)             <li><strong>git restore --staged&lt;file></strong> elimina la ultima captura del INSED, no modifica el archivo.</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 52)             <li><strong>git rm --cached&lt;file></strong> elimina el archivo del INSEX, no se realiza mas seguimiento.</li>
+cdc8fbc8 (lautaro argañaras 2021-09-23 10:41:05 -0300 53)         </ul>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 54)         <article>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 55)             <h3>Repository (LOCAL/REMOTO))</h3>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 56)             <p>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 57)                 El area donde se almacenan todas las confirmaciones de cambios en archivos de tipo blolb(bynario large object file) distribuidos en una estructura de carpetas identificadas de manera hexcadecimal, que van desde el 00 al FF. Esto nos permite crear puntos de control a los que podemos volver en cualquier momento.
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 58)             </p>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 59)             <ul class="commands">
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 60)                 <li><strong>git commit</strong> abre el editor predeterminado para realizar la confirmacion de cambios.</li>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 61)                 <li><strong>git log </strong>muestra el historial de cambios ordenados de manera descendente</li>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 62)                 <li><strong>git blame &lt;file></strong> muestra los autores y confirmaciones de cada linea en un archivo.</li>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 63)                 <li><strong>git push &lt;remote> &lt;branch></strong> agrega los cambios de la rama al repositorio remoto</li>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 64)                 <li><strong>git fetch &lt;remote> </strong>captura el hisotrial de cmabios del repostiroio remoto</li>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 65)             </ul>
+00000000 (Not Committed Yet 2021-09-23 10:53:04 -0300 66)         </article>
+e7959bac (Cristian Racedo   2021-09-16 12:54:19 -0300 67)     </section>
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300 68) </body>
+^2e8a975 (Cristian Racedo   2021-09-16 11:29:41 -0300 69) </html>

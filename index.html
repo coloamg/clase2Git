@@ -9,6 +9,8 @@
             initial-scale=1,
             maximum-scale=3">
     <title>Git Desarrollo Colaborativo</title>
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
@@ -36,6 +38,7 @@
                 El area de control de cambios es aquella donde agregamos los archivos a los que vamos a estar haciendole seguimiento, cada vez que agregamos un elemento al INDEX, se realiza un acaptura de pantalla del cofigo (SNAPSHOT) que luego debera ser confirmada para determinar su permanencia en el historial de cambios.
             </p>
         </article>
+        <article>
         <ul class="commands">
             <li><strong>Git status</strong> muestra el estado de los archivos del Working Directory con respecto al INDEX, dentro de los estados mas comunes estan: 
                 <ul>
@@ -51,6 +54,7 @@
             <li><strong>git restore --staged&lt;file></strong> elimina la ultima captura del INSED, no modifica el archivo.</li>
             <li><strong>git rm --cached&lt;file></strong> elimina el archivo del INSEX, no se realiza mas seguimiento.</li>
         </ul>
+    </article>
         <article>
             <h3>Repository (LOCAL/REMOTO))</h3>
             <p>
